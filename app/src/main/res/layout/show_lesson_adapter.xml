@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="5dp"
+    android:layout_marginBottom="16dp">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="8dp">
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="25dp"-->
+        <!--android:background="@drawable/counsellor_adapter_layout_bgnd"-->
+        <!--android:id="@+id/relativeLayout"></RelativeLayout>-->
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_centerVertical="true"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/profile_image">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/subject"
+                android:text="Subject"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/profile_image"
+                android:layout_alignParentTop="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/lesson"
+                android:layout_below="@+id/name"
+                android:layout_toRightOf="@+id/profile_image"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+             android:text="Lesson1"
+                android:layout_alignRight="@+id/relativeLayout"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/time"
+                android:text="8:00AM-9:00AM"
+                android:layout_below="@+id/qualification"
+                android:layout_alignRight="@+id/relativeLayout"
+                android:layout_toRightOf="@+id/profile_image"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+
+
+
+
+                />
+
+
+        </LinearLayout>
+        <!--<TextView-->
+        <!--android:id="@+id/book"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="5dp"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_below="@+id/layout"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:text="Book Counsellor"/>-->
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:textSize="14dp"
+            android:text="ckjkhck"
+            android:visibility="gone"
+            android:layout_marginBottom="6dp" />
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

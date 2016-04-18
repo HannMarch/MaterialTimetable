@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Programming"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_below="@+id/subject"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:text="Sunday 1:00PM - 2:00PM"
+
+        />
+    <TextView
+        android:id="@+id/clas"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="3dp"
+        android:textSize="16dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class:  Android"
+        />
+    <TextView
+        android:id="@+id/teacher"
+        android:layout_below="@+id/clas"
+        android:layout_marginTop="3dp"
+        android:textSize="16dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teacher: Example"
+        />
+
+    <TextView
+        android:text="EDIT"
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignTop="@+id/close"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/close"
+        android:text="CLOSE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+       android:layout_below="@+id/teacher"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="7dp"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <TextView
+        android:id="@+id/delete"
+        android:text="DELETE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/teacher"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="7dp"
+        android:textColor="@color/colorPrimary"/>
+</RelativeLayout>

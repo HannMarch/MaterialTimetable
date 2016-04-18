@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <RelativeLayout
+       android:id="@+id/detail_layout"
+       android:layout_width="match_parent"
+       android:layout_below="@+id/toolbar"
+       android:layout_marginTop="10dp"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_toLeftOf="@+id/color_layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginLeft="15dp"
+
+            android:id="@+id/subject_layout"
+            android:layout_marginRight="15dp"
+            >
+
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="helveticaneue"
+
+                android:textColorHint="#6C7D7E"
+                android:hint="Subject" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/color_layout"
+            android:layout_below="@+id/subject_layout"
+            android:id="@+id/teacher_layout"
+            android:layout_marginRight="15dp"
+            >
+
+            <EditText
+                android:id="@+id/teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="helveticaneue"
+
+                android:textColorHint="#6C7D7E"
+                android:hint="Teacher" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/class_layout"
+
+            android:layout_below="@+id/teacher_layout"
+            android:layout_marginRight="15dp"
+            >
+
+            <EditText
+                android:id="@+id/classroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="helveticaneue"
+                android:textColorHint="#6C7D7E"
+                android:hint="Classroom" />
+
+        </android.support.design.widget.TextInputLayout>
+
+       </LinearLayout>
+
+
+    <LinearLayout
+      android:orientation="vertical"
+       android:id="@+id/color_layout"
+        android:layout_width="100dp"
+        android:background="#2b2f32"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="100dp"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Pick\ncolor"/>
+    </LinearLayout>
+
+   </RelativeLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_below="@+id/class_layout"-->
+        <!--android:background="#2b2f32"></LinearLayout>-->
+<TextView
+    android:id="@+id/select_days"
+    android:layout_below="@+id/detail_layout"
+    android:layout_width="match_parent"
+    android:text="SELECT DAYS"
+    android:textSize="18dp"
+    android:textColor="#7E7E7E"
+    android:textStyle="bold"
+
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_height="wrap_content" />
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+     android:layout_below="@+id/select_days"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+</RelativeLayout>
